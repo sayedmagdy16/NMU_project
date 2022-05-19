@@ -12,6 +12,7 @@ namespace NMU_project_1
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -33,6 +34,8 @@ namespace NMU_project_1
             frm2.Show();
 
         }
+
+
         private bool charschecker(string x)
         {
             if(x.Length < 1) return false;
@@ -43,114 +46,49 @@ namespace NMU_project_1
             return true; 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_create_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void txt_cpass_TextChanged(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
+            logo.BorderStyle = BorderStyle.None;
+            btn_Exit.FlatStyle = FlatStyle.Flat;
+            btn_Exit.FlatAppearance.BorderSize = 0;
+            btn_Min.FlatStyle = FlatStyle.Flat;
+            btn_Min.FlatAppearance.BorderSize = 0;
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
 
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void btn_MIn_Click(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Minimized;
+           
+        }
+        private void btn_Exit_MouseHover(object sender, EventArgs e)
+        {
+            btn_Exit.BackColor = Color.Red;
         }
 
-        private void txt_account_pass_TextChanged(object sender, EventArgs e)
+        private void btn_Exit_MouseLeave(object sender, EventArgs e)
         {
-
+            btn_Exit.BackColor = Color.CadetBlue;
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void btn_Min_MouseHover(object sender, EventArgs e)
         {
-
+            btn_Min.BackColor = Color.SkyBlue;
         }
 
-        private void txt_email_pass_TextChanged(object sender, EventArgs e)
+        private void btn_Min_MouseLeave(object sender, EventArgs e)
         {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_email_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_phone_num_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_id_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_account_num_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_account_name_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
+            btn_Min.BackColor = Color.CadetBlue;
         }
     }
 }

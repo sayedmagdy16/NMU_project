@@ -21,5 +21,16 @@ namespace NMU_project_1
         {
             
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            btn_Exit.FlatStyle = FlatStyle.Flat;
+            btn_Exit.FlatAppearance.BorderSize = 0;
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

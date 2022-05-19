@@ -56,7 +56,6 @@
             this.label1.Size = new System.Drawing.Size(148, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "National ID";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -103,7 +102,6 @@
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(473, 27);
             this.txt_email.TabIndex = 4;
-            this.txt_email.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txt_pass
             // 
@@ -167,7 +165,6 @@
             this.btn_Exit.TabIndex = 1;
             this.btn_Exit.Text = "X";
             this.btn_Exit.UseVisualStyleBackColor = false;
-            this.btn_Exit.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
